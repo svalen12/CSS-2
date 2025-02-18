@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* 1. Selector de etiqueta */
+p {
+    color: rgb(0, 234, 255);
+}
+h1 {
+    font-size: 24px;
+}
+
+/* 2. Selector de ID */
+#principal {
+    background-color: rgb(225, 255, 53);
+}
+#destacado {
+    border: 2px solid red;
+}
+
+/* 3. Selector de clase */
+.importante {
+    font-weight: bold;
+}
+.resaltado {
+    background-color: lightgreen;
+}
+
+/* 4. Selector de coma (agrupación) */
+h1, h2, h3 {
+    font-family: Arial;
+}
+.primario, .secundario {
+    text-align: center;
+}
+
+/* 5. Selector de atributos */
+input[type="text"] {
+    border: 1px solid blue;
+}
+a[href^="https"] {
+    color: green;
+}
+
+/* 6. Selector universal */
+* {
+    margin: 0;
+}
+div * {
+    padding: 5px;
+}
+
+/* 7. Selector de espacio (descendiente) */
+div p {
+    color: purple;
+}
+article span {
+    font-style: italic;
+}
+
+/* 8. Selector hijo directo */
+nav > a {
+    text-decoration: none;
+}
+ul > li {
+    list-style: square;
+}
+
+/* 9. Selector de hermano adyacente */
+h2 + p {
+    font-size: 18px;
+}
+label + input {
+    margin-left: 10px;
+}
+
+/* 10. Selector de hermanos generales */
+h1 ~ p {
+    color: gray;
+}
+.titulo ~ .parrafo {
+    text-indent: 20px;
+}
+</style>
+</head>
+<body>
+    <!-- Ejemplos de etiqueta -->
+    <p>Este es un párrafo azul</p>
+    <h1>Este es un encabezado de 24px</h1>
+
+    <!-- Ejemplos de ID -->
+    <div id="principal">Contenido con fondo amarillo</div>
+    <p id="destacado">Texto con borde rojo</p>
+
+    <!-- Ejemplos de clase -->
+    <p class="importante">Texto en negrita</p>
+    <div class="resaltado">Texto con fondo verde claro</div>
+
+    <!-- Ejemplos de agrupación -->
+    <h1>Título con Arial</h1>
+    <h2>Subtítulo con Arial</h2>
+    <p class="primario">Texto centrado</p>
+    <p class="secundario">También centrado</p>
+
+    <!-- Ejemplos de atributos -->
+    <input type="text" placeholder="Borde azul">
+    <a href="https://ejemplo.com">Enlace verde</a>
+
+    <!-- Ejemplos de selector universal -->
+    <div>
+        <p>Texto con padding 5px</p>
+        <span>También con padding 5px</span>
+    </div>
+
+    <!-- Ejemplos de descendiente -->
+    <div>
+        <p>Texto en morado</p>
+    </div>
+    <article>
+        <span>Texto en cursiva</span>
+    </article>
+
+    <!-- Ejemplos de hijo directo -->
+    <nav>
+        <a href="#">Enlace sin subrayado</a>
+    </nav>
+    <ul>
+        <li>Lista con cuadrados</li>
+    </ul>
+
+    <!-- Ejemplos de hermano adyacente -->
+    <h2>Título</h2>
+    <p>Párrafo de 18px</p>
+    <label>Nombre:</label>
+    <input type="text">
+
+    <!-- Ejemplos de hermanos generales -->
+    <h1>Título principal</h1>
+    <p>Párrafo en gris</p>
+    <p>También en gris</p>
+    
+    <div class="titulo">Título</div>
+    <p class="parrafo">Párrafo con sangría</p>
+    <p class="parrafo">También con sangría</p>
+</body>
+</html>
+
+
+	
+
